@@ -18,5 +18,8 @@ Permission plugin for Flutter. This plugin provides a cross-platform (iOS, Andro
 
   s.ios.deployment_target = '8.0'
   s.static_framework = true
+  s.xcconfig = { 
+      'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) PERMISSION_EVENTS=1',
+  }
 end
 
